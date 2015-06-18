@@ -38,19 +38,3 @@ This service looks up a barcode by UPC id. It connects with a SOAP service, take
             [
               "Some product data goes here"
             ]
-
-
-# Read Barcode By Id [/barcode/read/{id}]
-
-'Read by Id' endpoint
-
-## barcode/read/id [GET]
-
-+ Parameters
-  + id - Id of barcode
-
-+ Response 200 (application/json)
-    + Body
-            [
-              "Some product data goes here"
-            ]
