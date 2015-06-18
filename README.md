@@ -18,10 +18,10 @@ This service looks up a barcode by UPC id. It connects with a SOAP service, take
               "Array of recent barcode searches"
             ]
 
+
 # Read Barcode [/barcode/read]
 
 'Read Barcode' endpoint.
-
 
 ## barcode/read [POST]
 
@@ -40,9 +40,11 @@ This service looks up a barcode by UPC id. It connects with a SOAP service, take
             ]
 
 
-# GET /barcode/read/{id}
+# Read Barcode By Id [/barcode/read/{id}]
 
-## barcode/read/{id} [GET]
+'Read by Id' endpoint
+
+## barcode/read/id [GET]
 
 + Parameters
   + id - Id of barcode
