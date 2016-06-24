@@ -7,10 +7,11 @@
     "csv": "^0.4.2",
     "express": "~4.0.0",
     "fh-mbaas-api": "~4.9.0",
-    "jsdom-no-contextify": "~3.*",
+    "jsdom": "~3.*",
     "mocha": "^2.1.0",
     "request": "^2.40.0",
-    "soap": "^0.8.0"
+    "soap": "^0.8.0",
+    "node-gyp" : "3.2.0"
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
@@ -32,7 +33,8 @@
   "scripts": {
     "test": "grunt test",
     "debug": "grunt serve",
-    "start": "node application.js"
+    "start": "node application.js",
+    "preinstall": "npm i --ignore-scripts && cd node_modules/jsdom/node_modules/contextify/ && ../../../.bin/node-gyp configure && ../../../.bin/node-gyp build"
   },
   "license": "mit"
 }
