@@ -7,7 +7,7 @@
     "csv": "^0.4.2",
     "express": "~4.0.0",
     "fh-mbaas-api": "~4.9.0",
-    "jsdom": "~9.*",
+    "jsdom-no-contextify": "~3.*",
     "mocha": "^2.1.0",
     "request": "^2.40.0",
     "soap": "^0.8.0"
