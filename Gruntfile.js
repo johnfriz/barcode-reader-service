@@ -9,13 +9,13 @@ module.exports = function(grunt) {
       js: {
         files: ['gruntfile.js', 'application.js', 'lib/**/*.js', 'test/**/*.js'],
         options: {
-          livereload: true
+          livereload: 35739
         }
       },
       html: {
         files: ['public/views/**', 'app/views/**'],
         options: {
-          livereload: true
+          livereload: 35739
         }
       }
     },
@@ -29,7 +29,8 @@ module.exports = function(grunt) {
           nodeArgs: [],
           delayTime: 1,
           env: {
-            PORT: 3000
+            PORT: 3000,
+            FH_PORT: 8002
           },
           cwd: __dirname
         }
